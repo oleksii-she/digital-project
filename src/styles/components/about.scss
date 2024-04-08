@@ -1,0 +1,55 @@
+.about {
+  padding-bottom: 150px;
+
+  &__wrapper {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 70px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    position: relative;
+    display: flex;
+  }
+
+  &__bg-image1 {
+    width: 270px;
+    height: 270px;
+    background-image: url("../../assets/about/image1.png");
+    background-repeat: no-repeat;
+  }
+
+  &__bg-image2 {
+    width: 270px;
+    background-image: url("../../assets/about/iamge2.png");
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+    height: 140px;
+    position: absolute;
+  }
+
+  &__bg-image3 {
+    width: 270px;
+    background-image: url("../../assets/about/image3.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    margin-left: 30px;
+    height: 100%;
+  }
+
+  &__content {
+    width: 400px;
+    h2 {
+      font-weight: 300;
+      color: var(--text-secondary-color);
+    }
+    p {
+      margin-bottom: 2%;
+    }
+  }
+}

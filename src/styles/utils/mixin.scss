@@ -1,0 +1,75 @@
+@mixin tabletMedia {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptopMedia {
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin desktopMedia {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin hoverBlackBtn {
+  &:hover,
+  &:focus {
+    background-color: var(--text-accent-color);
+    transition: var(--transition);
+
+    span {
+      color: var(--text-main-color);
+    }
+    svg {
+      fill: var(--text-main-color);
+    }
+  }
+}
+
+@mixin hoverFocusWhiteBtn {
+  &:hover,
+  &:focus {
+    background-color: var(--text-main-color);
+    transition: var(--transition);
+
+    span {
+      color: var(--bg-color);
+    }
+    svg {
+      fill: var(--bg-color);
+    }
+  }
+}
+
+@mixin hoverFocusHeaderLogo {
+  &:hover,
+  &:focus {
+    transition: var(--transition);
+
+    span {
+      color: var(--text-secondary-color);
+    }
+    svg {
+      fill: var(--text-secondary-color);
+    }
+  }
+}
+
+@mixin hoverLink {
+  &:hover,
+  &:focus {
+    transition: var(--transition);
+    color: var(--text-secondary-color) !important;
+    span {
+      color: var(--text-secondary-color) !important;
+    }
+    svg {
+      fill: var(--text-secondary-color);
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@import "./utils/mixin.scss";
+@import "./utils/reset.css";
+:root {
+  --bg-color: #fff;
+  --primary-color: #fbfbfb;
+  --secondary-color: #f3f3f3;
+
+  --footer-color: #2c2c2c;
+
+  --btn-color: #f9f9f9;
+  --text-main-color: #333;
+  --text-secondary-color: #8d8d8d;
+  --text-accent-color: #f2f2f2;
+
+  --text-rarely-color: #c8c8c880;
+
+  --transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container {
+  min-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 135px;
+  padding-right: 135px;
+  max-width: 1440px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: var(--text-main-color);
+}
+ul {
+  list-style: none;
+}
+h1,
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+a,
+p,
+span {
+  color: var(--text-main-color);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 156%;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+.logo,
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    width: 26px;
+    height: 26px;
+  }
+  span {
+    margin-top: 5px;
+  }
+
+  @include hoverFocusHeaderLogo;
+}
+
+.button-more {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  padding: 29px 50px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  border: none;
+
+  span {
+    margin-right: 12px;
+  }
+
+  @include hoverBlackBtn;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 100%;
+  color: var(--text-secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-footer {
+  color: var(--bg-color);
+}
+
+.logo-footer {
+  svg {
+    stroke: var(--bg-color);
+  }
+  span {
+    color: var(--bg-color);
+  }
+}
+
+.button-more---grey {
+  @include hoverFocusWhiteBtn;
+}

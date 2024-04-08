@@ -1,0 +1,20 @@
+{
+  "name": "digital-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.74.1",
+    "sass-loader": "^14.1.1",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8"
+  },
+  "dependencies": {
+    "vite-plugin-sass": "^0.1.0"
+  }
+}

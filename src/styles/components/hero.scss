@@ -1,0 +1,101 @@
+@import "../utils/mixin.scss";
+
+.hero {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 336px;
+  }
+
+  &__btn-box {
+    display: flex;
+    margin-bottom: 90px;
+    button {
+      width: 53px;
+      height: 53px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      border: 1px solid var(--text-accent-color);
+
+      background: var(--text-accent-color);
+      svg {
+        width: 17px;
+        height: 8px;
+      }
+      &:first-child {
+        border: 1px solid var(--text-accent-color);
+
+        background: transparent;
+        margin-right: 22.94px;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          background: var(--text-accent-color);
+          transition: var(--transition);
+        }
+      }
+
+      &:hover {
+        background-color: var(--bg-color);
+      }
+      &:focus {
+        background-color: var(--text-accent-color);
+      }
+    }
+  }
+
+  &__clock {
+    display: flex;
+    align-items: center;
+    span {
+      width: 43.822px;
+      transform: rotate(135deg);
+      height: 5px;
+      background-color: black;
+    }
+    p {
+      color: var(--text-secondary-color);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 100%;
+      &:first-child {
+        margin-right: 25px;
+      }
+      &:last-child {
+        margin-left: 25px;
+      }
+    }
+  }
+  &__title {
+    color: var(--Gray-4, #bdbdbd);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    span {
+      color: var(--Gray-1, #333);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+    margin-bottom: 90px;
+  }
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include hoverFocusWhiteBtn;
+  }
+  padding-bottom: 120px;
+}

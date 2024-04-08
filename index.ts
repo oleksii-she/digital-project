@@ -1,10 +1,9 @@
-import "../styles/styles.scss";
-
-import "../styles/components/headerAndFooter.scss";
-import "../styles/components/hero.scss";
-import "../styles/components/about.scss";
-import "../styles/components/tasksAndProject.scss";
-import "../styles/components/feedback.scss";
+import "./src/styles/styles.scss";
+import "./src/styles//components/headerAndFooter.scss";
+import "./src/styles//components/hero.scss";
+import "./src/styles//components/about.scss";
+import "./src/styles//components/tasksAndProject.scss";
+import "./src/styles//components/feedback.scss";
 
 const form = document.getElementById("feedback") as HTMLFormElement | null;
 const TOKEN = import.meta.env.VITE_PUBLIC_TOKEN;
